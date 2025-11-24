@@ -4,24 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majesty Nails</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Majesty Beauty</title>
     <link rel="shortcut icon" href="img/logo_majesty_nails.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h3>Sacar turno</h3>
-    <nav>
-        <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./todoslosproductos.html">Productos</a></li>
-            <li><a href="./carrito.html">Mi carrito</a></li>
-            <li><a href="./calendario.html">Sacar turno </a></li>
-            <li><a href="./producto.html">Producto</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-            <li><a href="./dudas_frecuentes.html">Dudas Frecuentes</a></li>
-            <li><a href="./Terminosycondiciones.html">Terminos y condiciones</a></li>
-        </ul>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 82, 44, 0.644);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\noah_\OneDrive\Desktop\frontend\img\logo_majesty_nails.ico" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Majesty Beauty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dudas_frecuentes.html">Dudas frecuentes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./todoslosproductos.html">Todos los productos</a></li>
+                            <li><a class="dropdown-item" href="#">set de uñas</a></li>
+                            <li><a class="dropdown-item" href="#">set de aplicación</a></li>
+                            <li><a class="dropdown-item" href="#">extras</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <!-- quiero darle un poco de espacio del buscador y hacer que sea un boton que lleve a la pagina de inicio de sesion  -->
+                <button type="submit" class="btn btn-light">iniciar sesion</button>
+            </div>
+        </div>
     </nav>
     <section>
         <!-- Google Calendar Appointment Scheduling begin -->
@@ -29,7 +65,11 @@
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ304ryLVb3JPtPZdKT0nHvxnxSKNe6XS7lF1s0Y8Ba8rer7PAE2YiR8lfKbKXE7CdOAT_DJDJEs?gv=true"
             style="border: 0" width="100%" height="600" frameborder="0"></iframe>
         <!-- end Google Calendar Appointment Scheduling -->
-        <section>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

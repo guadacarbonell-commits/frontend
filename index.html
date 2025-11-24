@@ -1,83 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majesty Nails</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Majesty Beauty</title>
+    <!-- NOTA: El ícono y la hoja de estilos externa se mantienen. -->
     <link rel="shortcut icon" href="img/logo_majesty_nails.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
 </head>
 
+
 <body>
+    <!-- navbar -->
+     <!-- cambiar el nav del resto con las mejoras que estan aca -->
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(0, 82, 44, 0.644);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                
+                <img src="./img/logo_majesty_nails.ico" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top">
+                Majesty Beauty
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./todoslosproductos.html">Todos los productos</a></li>
+                            <!-- cambiar más adelante -->
+                            <li><a class="dropdown-item" href="#">set de uñas</a></li>
+                            <li><a class="dropdown-item" href="#">set de aplicación</a></li>
+                            <li><a class="dropdown-item" href="#">extras</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./dudas_frecuentes.html">Dudas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Terminosycondiciones.html">Terminos y condiciones</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <button type="submit" class="btn btn-light ms-3"><a href="./carrito.html">Carrito</a></button>
+                <button type="submit" class="btn btn-light ms-3"><a href="./iniciarsesion.html">Iniciar sesion</a></button>
+            </div>
+        </div>
+    </nav>
 
 
-    <header>
-
-        <img src="img/captura.PNG" alt="Logo de la marca majesty nails" width="150px">
-        <div class="parent">
-
-    </header>
-
-    </div>
-
-    <main>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./todoslosproductos.html">Productos</a></li>
-                <!--hacer lista desplegable de los tipos de productos-->
-                <li><a href="./carrito.html">Mi carrito</a></li>
-                <li><a href="./calendario.html">Sacar turno </a></li>
-                <li><a href="./producto.html">Producto</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./dudas_frecuentes.html">Dudas Frecuentes</a></li>
-                <li><a href="./Terminosycondiciones.html">Terminos y condiciones</a></li>
-            </ul>
-        </nav>
-        <section>
-            <a href="./iniciarsesion.html">iniciar sesion</a>
-        </section>
-
-        <section class="section-products">
-            <article class="product">
-                <h2>Aceite de cuticula LACA</h2>
-                <img class="img-product"
-                    src="img/procutos/60-aceite-para-unas-y-cuticulas1-907799244a4b7d9e3315938139990214-1024-1024.webp"
-                    alt="imagen del producto">
-                <p>aceite de tratamiento para cuticulas de LACA</p>
-                <h3>$99</h3>
-                <button type="submit">comprar</button>
-            </article>
-            <article class="product">
-                <h2>Pegamento press-on</h2>
-                <img class="img-product" src="img/pegamento.jpg" alt="imagen del producto">
-                <p>pegamento para press-on</p>
-                <h3>$99</h3>
-                <button type="submit">comprar</button>
-            </article>
-            <article class="product">
-                <h2>pegamento con pincel press-on</h2>
-                <img class="img-product" src="img/pegamentobrush.jpg" alt="imagen del producto">
-                <p>pegamento con pincel para press-on</p>
-                <h3>$99</h3>
-                <button type="submit">comprar</button>
-            </article>
-            <article class="product">
-                <h2>stickers para press-on</h2>
-                <img class="img-product" src="img/stickers_presson.jpeg" alt="imagen del producto">
-                <p>stickers para press-on</p>
-                <h3>$99</h3>
-                <button type="submit">comprar</button>
-            </article>
-        </section>
+    <section id="inicio" class="py-5 bg-light text-center">
+        <div>
+            <h2 class="display-4">Bienvenidos a Majesty Beauty</h2>
+            <p class="lead">Descubre la elegancia y calidad en cada uno de nuestros productos.</p>
+            <a href="./todoslosproductos.html" class="btn btn-primary btn-lg">Explora nuestros productos</a>
+        </div>
+    </section>
 
 
+    <main class="container py-5">
+        <div class="banner-productos text-center mb-4">
+            <h1 class="display-5 fw-bold text-success">Productos Destacados</h1>
+        </div>
+
+        <div id="productos-container"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center">
+        
+        </div>
+
+        <div class="row mt-5 mb-5">
+            <div class="col-12 text-center">
+
+
+                <div class="text-muted p-5 d-none" id="loading-message">
+                    Cargando productos... por favor espere.
+                </div>
+
+                <button id="load-more-btn" class="btn btn-lg btn-success" style="display:none;">
+                    Cargar más productos
+                </button>
+
+                <p id="no-more-products" class="text-muted mt-3" style="display:none;">
+                    No hay más productos disponibles.
+                </p>
+            </div>
+        </div>
+ 
     </main>
-    <footer>
-        <p>&copy;Majesty Nayls. Todos los derechos reservados. Defensa de las y los consumidores.
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; Majesty Beauty. Todos los derechos reservados. Defensa de las y los consumidores.
             letra chica que nadie lee nunca pero que se reservan los derechos y no denunciable</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/index.js"></script>
 </body>
+
 
 </html>
